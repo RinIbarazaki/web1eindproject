@@ -176,8 +176,12 @@ label {
         display: block;
     }
 
-    .menu:last-child{
-      /*padding-bottom: 2rem;*/
+    .menu > a:last-child{
+       padding-bottom: 5em;
+    }
+
+    body{
+      overflow: hidden;
     }
 
     .hamburger{
