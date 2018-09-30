@@ -15,6 +15,7 @@ header {
     background-color: #111111;
     text-align: center;
     height: 53px;
+    z-index: 1;
 }
 
 header > #menuid {
