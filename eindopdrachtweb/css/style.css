@@ -51,7 +51,6 @@ header > .menu > li > a:hover {
     display: none;
 }
 
-
 .top_image {
     background-image: url(../img/vogelbloem.jpg);
     width: 100%;
@@ -61,11 +60,11 @@ header > .menu > li > a:hover {
     background-size: cover;
     image-resolution: 300dpi;
 }
-    .top_image > h1 {
-    padding: 130px 20px 20px 20px;
-    color: #ffffff;
-    text-align: center;
-    }
+.homepagetitle {
+padding: 130px 20px 20px 20px;
+color: #ffffff;
+text-align: center;
+}
 
 #content {
     flex-wrap: wrap;
@@ -79,7 +78,7 @@ header > .menu > li > a:hover {
     margin: 0px;
 }
 
-.row{
+.row {
   padding: 20px;
   text-align: center;
   display: inline;
@@ -128,31 +127,35 @@ header > .menu > li > a:hover {
 
 /* start styling for photos page*/
 
-#imgContent{
-  padding-top: 5%;
-  display: block;
+.photospagetitle {
+    padding: 100px 20px 20px 20px;
+}
+
+#imgContent {
+    padding-bottom: 5%;
+    display: block;
 }
 
 .galleryItem{
-  overflow: hidden;
+    overflow: hidden;
 }
 
 .galleryContainer{
-  max-width: 1200px;
-  margin: auto;
+    max-width: 1360px;
+    margin: auto;
 }
 
 .galleryImg{
-  max-width: 100%;
-  transition: .5s;
+    max-width: 100%;
+    transition: .5s;
 }
 
 .galleryImg:hover{
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .galleryItem img{
-  display: block;
+    display: block;
 }
 
 /*end of photo page styling*/
@@ -184,14 +187,18 @@ header > .menu > li > a:hover {
 /* styling voor mobile */
 
 @media only screen and (max-width: 800px) {
-
-  .title{
-        font-size: 2.5em;
-        padding-top: 10%;
+    .homepagetitle {
+        font-size: 2.2em;
     }
 
-    .imgContent{
+    .photospagetitle{
+        font-size: 2.2em;
+        padding-top: 10%;
+    }
+    
+    #imgContent{
       padding-top: 20%;
+      padding-bottom: 0;
     }
 
     header {
@@ -257,7 +264,11 @@ header > .menu > li > a:hover {
       padding-top: 12%;
     }
 
-    .title{
+    .homepagetitle {
+        font-size: 2.3em;
+    }
+
+    .photospagetitle{
       font-size: 2.3em;
     }
 
