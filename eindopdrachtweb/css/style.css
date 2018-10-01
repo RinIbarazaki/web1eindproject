@@ -186,6 +186,7 @@ header > .menu > li > a:hover {
 @media only screen and (max-width: 800px) {
 
   .title{
+        font-size: 2.5em;
         padding-top: 10%;
     }
 
