@@ -128,10 +128,6 @@ header > .menu > li > a:hover {
 
 /* start styling for photos page*/
 
-.title{
-  font-size: 3em;
-}
-
 #imgContent{
   padding-top: 5%;
   display: block;
@@ -190,7 +186,6 @@ header > .menu > li > a:hover {
 @media only screen and (max-width: 800px) {
 
   .title{
-        font-size: 2.5em;
         padding-top: 10%;
     }
 
