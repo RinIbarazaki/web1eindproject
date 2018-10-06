@@ -157,11 +157,6 @@ header > .menu > li > a:hover {
 #aboutusgrid > img {
     height: 380px;
     width: 600px;
-    transition: .5s;
-}
-
-#aboutusgrid > img:hover{
-    transform: scale(1.1);
 }
 
 #aboutusgrid > h4 { 
