@@ -88,7 +88,7 @@ header > .menu > li > a:hover {
 }
 .content {
     display: flex;
-    background-color: #111111;
+    
     color: #ffffff;
     margin: 0px;
 }
