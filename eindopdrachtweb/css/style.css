@@ -136,35 +136,42 @@ header > .menu > li > a:hover {
     color: #ffffff; 
 }
 
-#aboutus {
+.aboutus {
     display: flex;
-    flex-wrap: wrap;
     margin: 4px;
     justify-content: center;
     text-align: center;
-    margin-top: 30px;
-    margin-bottom: 100px;
+    margin-top: 4%;
+    margin-bottom: 10%;
 }
 
-#aboutusgrid {
-    color: #ffffff;
-    background-color: #111111;
-    height: 380px;
-    width: 600px;
+.aboutusgrid {
+    flex-direction: column;
+}
+
+.aboutusgriditem {
+    display: inline-block;
     margin-bottom: 4px;  
 }
 
-#aboutusgrid > img {
+.aboutusgriditem > img {
     height: 380px;
     width: 600px;
 }
 
-#aboutusgrid > h4 { 
+.aboutusgriditem > .aboutustext {
+    color: #ffffff;
+    height: 380px;
+    width: 600px;
+    background-color: #111111;
+}
+
+.aboutusgriditem > .aboutustext > h4 { 
     padding: 14% 0 0 0;
 }
 
-#aboutusgrid > p {  
-    padding: 10px 60px 10px 60px;
+.aboutusgriditem > .aboutustext > p {  
+    padding: 10px 60px 60px 60px;
 }
 
 /*End styling about us page*/
@@ -313,6 +320,17 @@ header > .menu > li > a:hover {
 
 
 @media only screen and (max-width: 600px) {
+
+    .aboutusgriditem > img {
+        height: auto;
+        width: 100%;
+    }
+    
+    .aboutusgriditem > .aboutustext {
+        color: #ffffff;
+        height: auto;
+        width: 100%;
+    }
 
    #imgContent{
       padding-top: 12%;
