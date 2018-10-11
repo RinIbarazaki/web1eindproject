@@ -9,6 +9,11 @@ body {
     background-color: black;
 }
 
+
+
+
+/*Start Styling Header*/
+
 header {
     width: 100%;
     position: fixed;
@@ -51,6 +56,11 @@ header > .menu > li > a:hover {
 #toggle {
     display: none;
 }
+
+/*End Styling Header*/
+
+
+
 
 
 
@@ -111,6 +121,12 @@ header > .menu > li > a:hover {
 
 
 
+
+
+
+
+/*Start Styling Footer*/
+
 #footer {
     width: 100%;
     height: 55px;
@@ -125,6 +141,12 @@ header > .menu > li > a:hover {
 .footer_icons > i:hover {
     color: #333333;
 }
+
+/*End Styling Footer*/
+
+
+
+
 
 
 
@@ -179,6 +201,9 @@ header > .menu > li > a:hover {
 
 
 
+
+
+
 /* start styling for photos page*/
 
 .row {
@@ -221,6 +246,40 @@ header > .menu > li > a:hover {
 
 /*end of photo page styling*/
 
+
+
+
+
+
+/* Start contact page styling*/
+
+.contactpagetitle {
+    padding: 130px 20px 20px 20px;
+    text-align: center;
+    color: #ffffff; 
+}
+
+
+.contentleft {
+    height: 100%
+    width: 50%;
+}
+
+.contentright {
+    background-color: #111111;
+    height: 100%;
+    width: 50%;
+}
+
+/*end of contact page styling*/
+
+
+
+
+
+
+
+
 @media screen and (min-width: 600px){
   .gallery{
     display: flex;
@@ -260,6 +319,10 @@ header > .menu > li > a:hover {
     #imgContent{
       padding-top: 20%;
       padding-bottom: 0;
+    }
+
+    .aboutusgriditem {
+        margin-bottom: 40px;  
     }
 
     header {
