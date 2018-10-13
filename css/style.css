@@ -249,11 +249,11 @@ header > .menu > li >  a {
     height: auto;
     width: 100%;
     background-color: #111111;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 table {
     color: #ffffff;
-    padding: 40px 20px 60px 20px;
+    padding: 40px 10px 60px 10px;
 }
 table > thead > tr > th,
 table > tbody > tr > td {
@@ -268,7 +268,7 @@ tbody > tr > td:first-child {
 }
 .contactcontent2 {  
     width: 100%;
-    height: 380px;
+    height: 700px;
 }
 
 /*end of contact page styling*/
@@ -325,22 +325,21 @@ tbody > tr > td:first-child {
     .aboutusgriditem {
         margin-bottom: 40px;  
     }
+
+    .contacttablewrapper {
+        margin-top: 0;
+    }
     table {
-        padding-top: 80px;
+        padding: 80px 0 60px 0;
     }
     table > thead {
         display: none;
-    }
-    table > tbody {
-        display: block;
-    }
-    table > tbody > tr {
-        display: block;
     }
     table > tbody > tr > td {
         display: block;
         vertical-align: middle;
         text-align: right;
+        padding: 2px 6px 2px 6px;
     }
     table > tbody > tr > td:last-child {
         padding-bottom: 80px;
@@ -349,12 +348,11 @@ tbody > tr > td:first-child {
     table > tbody > tr > td:first-child {
         padding-bottom: 20px;
         font-size: auto;
-        color: #7587ec;
     }
     table > tbody > tr > td[data-title]:before {
         content: attr(data-title);
         float: left;
-        padding-right: 40px;
+        padding-right: 140px;
     }
 
     header {
@@ -437,6 +435,10 @@ tbody > tr > td:first-child {
       width: 100%;
     }
 
+    table > tbody > tr > td[data-title]:before {
+        padding-right: 80px;
+    }
+
     header {
         height: 88px;
     }
@@ -454,5 +456,11 @@ tbody > tr > td:first-child {
         font-size: 30px;
         padding: 28px 10px 18px 10px;
     }
+}
 
+@media only screen and (max-width: 420px) {
+
+    table > tbody > tr > td[data-title]:before {
+        padding-right: 10px;     
+    }
 }
