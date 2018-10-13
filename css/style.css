@@ -436,7 +436,7 @@ tbody > tr > td:first-child {
     }
 
     table > tbody > tr > td[data-title]:before {
-        padding-right: 80px;
+        padding-right: 100px;
     }
 
     header {
