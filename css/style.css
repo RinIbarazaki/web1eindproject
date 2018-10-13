@@ -3,18 +3,12 @@
     padding: 0px;
     border: 0px;
 }
-
-body {
+ body {
     font-family: 'Ubuntu', sans-serif;
     background-color: black;
 }
-
-
-
-
-/*Start Styling Header*/
-
-header {
+ /*Start Styling Header*/
+ header {
     width: 100%;
     position: fixed;
     color: #ffffff;
@@ -23,13 +17,11 @@ header {
     height: 53px;
     z-index: 1;
 }
-
-header > #menuid {
+ header > #menuid {
     background-color: #111111;
     justify-content: center;
 }
-
-header > .menu {
+ header > .menu {
     padding: 0 34px 0 24px;
     font-size: 95%;
     list-style: none;
@@ -41,67 +33,50 @@ header > .menu > li >  a {
     text-decoration: none;
     color: #fff;
 }
-
-header > .menu > li > a:hover {
+ header > .menu > li > a:hover {
     color: #333333;
 }
-
-.hamburger {
+ .hamburger {
     background-color: #111111;
     display: none;
 }
-
-#toggle {
+ #toggle {
     display: none;
 }
-
-.dropdownContent{
+ .dropdownContent{
   display: none;
   position: absolute;
   background-color: #111111;
   width: 137.883px;
 }
-
-.dropdownContent > a{
+ .dropdownContent > a{
   text-decoration: none;
   display: block;
   color: #fff;
   padding: 18px 34px 18px 34px;
 }
-
-.dropdownContent > a:hover{
+ .dropdownContent > a:hover{
   color: #333333;
 }
-
-.dropdown{
+ .dropdown{
   padding: 18px 34px 18px 34px;
   display: inline-block;
   cursor: pointer;
 }
-
-.fa.fa-caret-down{
+ .fa.fa-caret-down{
   margin-left: 4px;
 }
-
-#dropToggle{
+ #dropToggle{
   display: none;
 }
-
-#dropToggle:checked + .dropdownContent{
+ #dropToggle:checked + .dropdownContent{
   display: block;
 }
+ /*End Styling Header*/
 
-/*End Styling Header*/
-
-
-
-
-
-
-
-/*Start Styling Homepage*/
-
-.top_image {
+ 
+ /*Start Styling Homepage*/
+ .top_image {
     background-image: url(../img/vogelbloem.jpg);
     width: 100%;
     height: 100%;
@@ -110,24 +85,20 @@ header > .menu > li > a:hover {
     background-size: cover;
     image-resolution: 300dpi;
 }
-
-.homepagetitle {
+ .homepagetitle {
     padding: 130px 20px 20px 20px;
     color: #ffffff;
     text-align: center;
 }
-
-#content {
+ #content {
     flex-wrap: wrap;
 }
 .content {
     display: flex;
-
-    color: #ffffff;
+     color: #ffffff;
     margin: 0px;
 }
-
-.column1 {
+ .column1 {
     flex: 1;
     padding: 20px;
     text-align: center;
@@ -139,8 +110,7 @@ header > .menu > li > a:hover {
 .column1 > p {
     padding: 10px 40px 40px 40px;
 }
-
-.bottom_image {
+ .bottom_image {
     flex-direction: column;
     background-image: url(../img/gecko.jpg);
     width: 100%;
@@ -150,18 +120,11 @@ header > .menu > li > a:hover {
     background-size: cover;
     image-resolution: 300dpi;
 }
-
-/*End Styling Homepage*/
-
+ /*End Styling Homepage*/
 
 
-
-
-
-
-/*Start Styling Footer*/
-
-#footer {
+ /*Start Styling Footer*/
+ #footer {
     width: 100%;
     height: 55px;
     color: #fff;
@@ -175,9 +138,7 @@ header > .menu > li > a:hover {
 .footer_icons > i:hover {
     color: #333333;
 }
-
-/*End Styling Footer*/
-
+ /*End Styling Footer*/
 
 
 
@@ -189,10 +150,9 @@ header > .menu > li > a:hover {
 .aboutuspagetitle {
     padding: 130px 20px 20px 20px;
     text-align: center;
-    color: #ffffff;
+    color: #ffffff; 
     margin-bottom: 20px;
 }
-
 .aboutus {
     display: flex;
     margin: 4px;
@@ -201,33 +161,28 @@ header > .menu > li > a:hover {
     margin-top: 4%;
     margin-bottom: 6%;
 }
-
 .aboutusgrid {
     flex-direction: column;
 }
-
 .aboutusgriditem {
     display: inline-block;
-    margin-bottom: 4px;
+    margin-bottom: 4px;  
 }
-
 .aboutusgriditem > img {
+    border-radius: 0.2%;
     height: 380px;
     width: 600px;
 }
-
 .aboutusgriditem > .aboutustext {
     color: #ffffff;
     height: 380px;
     width: 600px;
     background-color: #111111;
 }
-
-.aboutusgriditem > .aboutustext > h4 {
+.aboutusgriditem > .aboutustext > h4 { 
     padding: 14% 0 0 0;
 }
-
-.aboutusgriditem > .aboutustext > p {
+.aboutusgriditem > .aboutustext > p {  
     padding: 10px 60px 60px 60px;
 }
 
@@ -247,34 +202,27 @@ header > .menu > li > a:hover {
     display: inline;
     justify-content: center;
   }
-
 .photospagetitle {
     padding: 100px 20px 20px 20px;
 }
-
 #imgContent {
     padding-bottom: 5%;
     display: block;
 }
-
 .galleryItem{
     overflow: hidden;
 }
-
 .galleryContainer{
     max-width: 1200px;
     margin: auto;
 }
-
 .galleryImg{
     max-width: 100%;
     transition: .5s;
 }
-
 .galleryImg:hover{
     transform: scale(1.1);
 }
-
 .galleryItem img{
     display: block;
 }
@@ -289,21 +237,28 @@ header > .menu > li > a:hover {
 /* Start contact page styling*/
 
 .contactpagetitle {
-    padding: 130px 20px 20px 20px;
+    padding: 130px 20px 60px 20px;
     text-align: center;
-    color: #ffffff;
+    color: #ffffff; 
 }
-
-
-.contentleft {
-    height: 100%
-    width: 50%;
-}
-
-.contentright {
+.contactcontent1 {
+    display: inline-flex;
+    justify-content: center;    
+    width: 100%;
     background-color: #111111;
-    height: 100%;
-    width: 50%;
+}
+table {
+    color: #ffffff;
+    text-align: left;
+    margin-left: 10px;
+    padding: 0 20px 20px 20px;
+}
+table > tr {
+    padding-right: 20px;
+}
+.contactcontent2 {  
+    width: 100%;
+    height: 380px;
 }
 
 /*end of contact page styling*/
@@ -334,10 +289,12 @@ header > .menu > li > a:hover {
         display: block;
         text-align: center;
   }
-
   .galleryItem{
     width: calc(100% / 2);
   }
+  .contentblock > .content {
+    padding: 20px 40px 80px 40px;
+}
 }
 /* styling voor mobile */
 
@@ -345,38 +302,39 @@ header > .menu > li > a:hover {
     .homepagetitle {
         font-size: 2.2em;
     }
-
     .photospagetitle{
         font-size: 2.2em;
         padding-top: 20px;
     }
-
     .aboutuspagetitle {
         font-size: 2.2em;
     }
-
+    
     #imgContent{
       padding-top: 20%;
       padding-bottom: 0;
     }
 
     .aboutusgriditem {
-        margin-bottom: 40px;
+        margin-bottom: 40px;  
     }
+    
 
     header {
         height: 60px;
     }
-
     .hamburger {
         float: left;
         padding: 1px 0 0 0;
         padding-left: 2%;
+        padding-right: 500px;
         display: block;
         cursor: pointer;
         font-size: 2.5em;
     }
-
+    #firstlink {
+        padding-top: 6%;
+    }
     header > .menu {
         float: none;
         display: none;
@@ -385,16 +343,13 @@ header > .menu > li > a:hover {
         font-size: 1.25em;
         padding: 0;
     }
-
     header > .menu a {
         display: block;
     }
-
     header > .menu > li{
       height: 15%;
       list-style: none;
     }
-
     header > .menu > li > a{
       width: 100%;
       height: 100%;
@@ -408,7 +363,6 @@ header > .menu > li > a:hover {
     #footer {
         height: 60px;
     }
-
     .footer_icons > i{
         font-size: 26px;
     }
@@ -421,8 +375,7 @@ header > .menu > li > a:hover {
     .aboutusgriditem > img {
         height: auto;
         width: 100%;
-    }
-
+    }   
     .aboutusgriditem > .aboutustext {
         color: #ffffff;
         height: auto;
@@ -436,11 +389,9 @@ header > .menu > li > a:hover {
     .homepagetitle {
         font-size: 2.3em;
     }
-
     .photospagetitle{
       font-size: 2.3em;
     }
-
     .homepagetitle {
         font-size: 2.3em;
     }
@@ -452,7 +403,6 @@ header > .menu > li > a:hover {
     header {
         height: 88px;
     }
-
     .hamburger {
         float: left;
         padding: 16px 0 0 0;
@@ -463,7 +413,6 @@ header > .menu > li > a:hover {
     #footer {
         height: 90px;
     }
-
     .footer_icons > i{
         font-size: 30px;
         padding: 28px 10px 18px 10px;
