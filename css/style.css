@@ -249,15 +249,16 @@ header > .menu > li >  a {
     height: auto;
     width: 100%;
     background-color: #111111;
+    margin-top: 20px;
 }
 table {
     color: #ffffff;
-    padding: 20 20px 40px 20px;
+    padding: 40px 20px 60px 20px;
 }
 table > thead > tr > th,
 table > tbody > tr > td {
     text-align: left;
-    padding: 2px 10px 2px 10px;
+    padding: 2px 26px 2px 26px;
 }
 thead > tr > th:first-child {
     color: #7587ec;
@@ -330,10 +331,10 @@ tbody > tr > td:first-child {
     table > thead {
         display: none;
     }
-    table > tbody{
+    table > tbody {
         display: block;
     }
-    table > tbody > tr{
+    table > tbody > tr {
         display: block;
     }
     table > tbody > tr > td {
@@ -350,7 +351,7 @@ tbody > tr > td:first-child {
         font-size: auto;
         color: #7587ec;
     }
-    table > tbody > tr > td[data-title]:before{
+    table > tbody > tr > td[data-title]:before {
         content: attr(data-title);
         float: left;
         padding-right: 40px;
