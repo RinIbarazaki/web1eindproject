@@ -277,7 +277,7 @@ tbody > tr > td:first-child {
     width: 100%;
 }
 form {
-    padding: 40px 16px 250px 16px;
+    padding: 40px 16px 40px 16px;
 }
 form > div > label {
     float: left;
