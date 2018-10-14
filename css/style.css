@@ -8,6 +8,7 @@
     font-family: 'Ubuntu', sans-serif;
     background-color: black;
 }
+
  /*Start Styling Header*/
  header {
     width: 100%;
@@ -249,37 +250,54 @@ header > .menu > li >  a {
 #contactpage {
     color: #fff;
 }
+
 .contactformwrapper {  
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
 }
+.form {
+    margin-bottom: 120px;
+}
 form {
     padding: 40px 16px 40px 16px;
 }
 form > div > label {
     float: left;
-    padding: 24px 20px 15px 10px;
+    padding: 24px 20px 20px 10px;
 }
 form > div > input,
-form > div > textarea {
-    border-radius: 0.5%;
+form > div > textarea,
+form > div > button {
+    border-radius: 0.7%;
     font-family: 'Ubuntu', sans-serif;
     width: 550px;
     color: #ffffff;
     background-color: #202020;
     float: right;
-    padding: 20px;
+    padding: 14px 18px 14px 18px;
     margin: 10px;
-    height: 10px;
+    height: auto;
 }
 form > div > textarea {
+    resize: none;
     font-size: 86%;
     max-width: 550px;
     min-width: 550px;
-    min-height: 140px;
-    margin-bottom: 140px;
+    min-height: 240px;
+    max-height: 240px;
+}
+form > div > button {
+    color: #7587ec;
+    background: #202020;
+}
+form > div > button:hover {
+    background: #111111;
+}
+form > div > button > p{
+    font-size: 120%;
+    padding: -50px;
 }
 .contacttablewrapper {
     display: inline-flex;
@@ -365,7 +383,8 @@ tbody > tr > td:first-child {
     }
 
     form > div > input,
-    form > div > textarea {
+    form > div > textarea,
+    form > div > button {
         width: 200px;
 
     }
@@ -399,7 +418,7 @@ tbody > tr > td:first-child {
     table > tbody > tr > td[data-title]:before {
         content: attr(data-title);
         float: left;
-        padding-right: 100px;
+        padding-right: 90px;
     }
 
     header {
