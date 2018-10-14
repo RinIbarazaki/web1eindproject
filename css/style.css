@@ -246,30 +246,6 @@ header > .menu > li >  a {
 #contactpage {
     color: #fff;
 }
-.contacttablewrapper {
-    display: inline-flex;
-    justify-content: center;    
-    height: auto;
-    width: 100%;
-    background-color: #111111   ;
-    margin-top: 30px;
-}
-table {
-    color: #fff;
-    padding: 40px 10px 60px 10px;
-}
-table > thead > tr > th,
-table > tbody > tr > td {
-    text-align: left;
-    padding: 2px 26px 2px 26px;
-}
-thead > tr > th:first-child {
-    padding-top: 20px;
-    color: #7587ec;
-}
-tbody > tr > td:first-child {
-    color: #7587ec;
-}
 .contactformwrapper {  
     display: inline-flex;
     flex-wrap: wrap;
@@ -301,6 +277,31 @@ form > div > textarea {
     min-height: 140px;
     margin-bottom: 140px;
 }
+.contacttablewrapper {
+    display: inline-flex;
+    justify-content: center;    
+    height: auto;
+    width: 100%;
+    background-color: #111111   ;
+    margin-top: 30px;
+}
+table {
+    color: #fff;
+    padding: 40px 10px 60px 10px;
+}
+table > thead > tr > th,
+table > tbody > tr > td {
+    text-align: left;
+    padding: 2px 26px 2px 26px;
+}
+thead > tr > th:first-child {
+    padding-top: 20px;
+    color: #7587ec;
+}
+tbody > tr > td:first-child {
+    color: #7587ec;
+}
+
 
 /*end of contact page styling*/
 
