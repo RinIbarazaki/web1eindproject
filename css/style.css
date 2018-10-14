@@ -173,12 +173,16 @@ header > .menu > li >  a {
     border-radius: 0.2%;
     height: 380px;
     width: 600px;
+    border-top-left-radius: 0.5%;
+    border-top-right-radius: 0.5%;
 }
 .aboutusgriditem > .aboutustext {
     color: #ffffff;
     height: 380px;
     width: 600px;
     background-color: #111111;
+    border-bottom-left-radius: 0.5%;
+    border-bottom-right-radius: 0.5%;
 }
 .aboutusgriditem > .aboutustext > h4 { 
     padding: 14% 0 0 0;
@@ -261,8 +265,9 @@ form > div > label {
 }
 form > div > input,
 form > div > textarea {
+    border-radius: 0.5%;
     font-family: 'Ubuntu', sans-serif;
-    width: 200px;
+    width: 550px;
     color: #ffffff;
     background-color: #111111;
     float: right;
@@ -272,8 +277,8 @@ form > div > textarea {
 }
 form > div > textarea {
     font-size: 86%;
-    max-width: 200px;
-    min-width: 200px;
+    max-width: 550px;
+    min-width: 550px;
     min-height: 140px;
     margin-bottom: 140px;
 }
@@ -358,6 +363,15 @@ tbody > tr > td:first-child {
         margin-bottom: 40px;  
     }
 
+    form > div > input,
+    form > div > textarea {
+        width: 200px;
+
+    }
+    form > div > textarea {
+        max-width: 200px;
+        min-width: 200px;
+    }
     .contacttablewrapper {
         margin-top: 0;
     }
