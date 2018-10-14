@@ -277,7 +277,7 @@ tbody > tr > td:first-child {
     width: 100%;
 }
 form {
-    padding: 140px 16px 250px 16px;
+    padding: 40px 16px 250px 16px;
 }
 form > div > label {
     float: left;
@@ -489,5 +489,18 @@ form > div > textarea {
 
     table > tbody > tr > td[data-title]:before {
         padding-right: 10px;     
+    }
+    .contactformwrapper {  
+        display: flex;
+    }
+    form > div > label {
+        text-align: center;
+        display: block;
+        float: none;
+          
+    }
+    form > div > input,
+    form > div > textarea {
+        float: none;
     }
 }
