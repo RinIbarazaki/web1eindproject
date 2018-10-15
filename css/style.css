@@ -40,10 +40,10 @@ header > .menu > li >  a {
  .hamburger {
     background-color: #111111;
     display: none;
+    color: #fff;
 }
  #toggle {
     display: none;
-    background-color: #ffffff;
 }
  .dropdownContent{
   display: none;
