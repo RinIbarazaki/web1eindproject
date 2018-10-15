@@ -148,12 +148,13 @@ header > .menu > li >  a {
 
 
 
+
 /*start styling about us page*/
 
 .aboutuspagetitle {
     padding: 130px 20px 20px 20px;
     text-align: center;
-    color: #ffffff;
+    color: #ffffff; 
     margin-bottom: 20px;
 }
 .aboutuscontainer {
@@ -172,21 +173,24 @@ header > .menu > li >  a {
     margin: 10px;
 }
 .aboutusgriditem > img {
-    border-radius: 0.2%;
     height: 380px;
     width: 600px;
+    border-top-left-radius: 0.5%;
+    border-top-right-radius: 0.5%;
 }
 .aboutusgriditem > .aboutustext {
     color: #ffffff;
     height: 380px;
     width: 600px;
     background-color: #111111;
+    border-bottom-left-radius: 0.5%;
+    border-bottom-right-radius: 0.5%;
 }
-.aboutusgriditem > .aboutustext > h4 {
+.aboutusgriditem > .aboutustext > h4 { 
     padding: 14% 0 0 0;
     color: #7587ec;
 }
-.aboutusgriditem > .aboutustext > p {
+.aboutusgriditem > .aboutustext > p {  
     padding: 10px 60px 60px 60px;
 }
 
@@ -243,14 +247,63 @@ header > .menu > li >  a {
 .contactpagetitle {
     padding: 130px 20px 60px 20px;
     text-align: center;
-    color: #ffffff;
+    color: #ffffff; 
 }
 #contactpage {
     color: #fff;
 }
+
+.contactformwrapper {  
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+.form {
+    margin-bottom: 120px;
+}
+form {
+    padding: 40px 16px 40px 16px;
+}
+form > div > label {
+    float: left;
+    padding: 24px 20px 20px 10px;
+}
+form > div > input,
+form > div > textarea,
+form > div > button {
+    border-radius: 0.7%;
+    font-family: 'Ubuntu', sans-serif;
+    width: 550px;
+    color: #ffffff;
+    background-color: #202020;
+    float: right;
+    padding: 14px 18px 14px 18px;
+    margin: 10px;
+    height: auto;
+}
+form > div > textarea {
+    resize: none;
+    font-size: 86%;
+    max-width: 550px;
+    min-width: 550px;
+    min-height: 240px;
+    max-height: 240px;
+}
+form > div > button {
+    color: #7587ec;
+    background: #202020;
+}
+form > div > button:hover {
+    background: #111111;
+}
+form > div > button > p{
+    font-size: 120%;
+    padding: -50px;
+}
 .contacttablewrapper {
     display: inline-flex;
-    justify-content: center;
+    justify-content: center;    
     height: auto;
     width: 100%;
     background-color: #111111   ;
@@ -265,43 +318,14 @@ table > tbody > tr > td {
     text-align: left;
     padding: 2px 26px 2px 26px;
 }
-thead > tr > th:first-child {
+thead> tr > th {
     padding-top: 20px;
+}
+thead > tr > th:first-child {
     color: #7587ec;
 }
 tbody > tr > td:first-child {
     color: #7587ec;
-}
-.contactformwrapper {
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-}
-form {
-    padding: 40px 16px 40px 16px;
-}
-form > div > label {
-    float: left;
-    padding: 24px 20px 15px 10px;
-}
-form > div > input,
-form > div > textarea {
-    font-family: 'Ubuntu', sans-serif;
-    width: 200px;
-    color: #ffffff;
-    background-color: #111111;
-    float: right;
-    padding: 20px;
-    margin: 10px;
-    height: 10px;
-}
-form > div > textarea {
-    font-size: 86%;
-    max-width: 200px;
-    min-width: 200px;
-    min-height: 140px;
-    margin-bottom: 140px;
 }
 
 /*end of contact page styling*/
@@ -410,6 +434,19 @@ form > div > textarea {
     .contacttablewrapper {
         margin-top: 0;
     }
+    form > div > input,
+    form > div > textarea,
+    form > div > button {
+        width: 200px;
+
+    }
+    form > div > textarea {
+        max-width: 200px;
+        min-width: 200px;
+    }
+    .contacttablewrapper {
+        margin-top: 0;
+    }
     table {
         padding: 120px 0 60px 0;
     }
@@ -418,7 +455,6 @@ form > div > textarea {
     }
     table > tbody > tr > td {
         display: block;
-        vertical-align: middle;
         text-align: right;
         padding: 2px 6px 2px 6px;
     }
@@ -433,7 +469,7 @@ form > div > textarea {
     table > tbody > tr > td[data-title]:before {
         content: attr(data-title);
         float: left;
-        padding-right: 100px;
+        padding-right: 90px;
     }
 
     header {
