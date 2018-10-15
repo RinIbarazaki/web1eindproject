@@ -43,6 +43,7 @@ header > .menu > li >  a {
 }
  #toggle {
     display: none;
+    background-color: #ffffff;
 }
  .dropdownContent{
   display: none;
