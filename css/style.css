@@ -1,0 +1,574 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+ body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: black;
+}
+ /*Start Styling Header*/
+ header {
+    width: 100%;
+    position: fixed;
+    color: #ffffff;
+    background-color: #111111;
+    text-align: center;
+    height: 53px;
+    z-index: 1;
+}
+ header > #menuid {
+    background-color: #111111;
+    justify-content: center;
+}
+ header > .menu {
+    padding: 0 34px 0 24px;
+    font-size: 95%;
+    list-style: none;
+    display: flex;
+}
+header > .menu > li >  a {
+    display: inline-block;
+    padding: 18px 34px 18px 34px;
+    text-decoration: none;
+    color: #fff;
+}
+ header > .menu > li > a:hover {
+    color: #333333;
+}
+ .hamburger {
+    background-color: #111111;
+    display: none;
+}
+ #toggle {
+    display: none;
+}
+ .dropdownContent{
+  display: none;
+  position: absolute;
+  background-color: #111111;
+  width: 137.883px;
+}
+
+.dropdownContent > ul{
+  list-style: none;
+}
+
+ .dropdownContent > ul > li > a{
+  text-decoration: none;
+  display: block;
+  color: #fff;
+  padding: 18px 34px 18px 34px;
+}
+ .dropdownContent > ul > li a:hover{
+  color: #333333;
+}
+ .dropdown{
+  padding: 18px 34px 18px 34px;
+  display: inline-block;
+  cursor: pointer;
+}
+ .fa.fa-caret-down{
+  margin-left: 4px;
+}
+ #dropToggle{
+  display: none;
+}
+ /*End Styling Header*/
+
+
+ /*Start Styling Homepage*/
+ .top_image {
+    background-image: url(../img/vogelbloem.jpg);
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    image-resolution: 300dpi;
+}
+ .homepagetitle {
+    padding: 130px 20px 20px 20px;
+    color: #ffffff;
+    text-align: center;
+}
+ #content {
+    flex-wrap: wrap;
+}
+.content {
+    display: flex;
+     color: #ffffff;
+    margin: 0px;
+}
+ .column1 {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    display: inline-block;
+}
+.column1 > h4 {
+    padding: 40px 0 0 0;
+}
+.column1 > p {
+    padding: 10px 40px 40px 40px;
+}
+ .bottom_image {
+    flex-direction: column;
+    background-image: url(../img/gecko.jpg);
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    image-resolution: 300dpi;
+}
+ /*End Styling Homepage*/
+
+
+ /*Start Styling Footer*/
+ #footer {
+    width: 100%;
+    height: 55px;
+    color: #fff;
+    text-align: center;
+    background-color: #111111;
+}
+.footer_icons > i {
+    padding: 16px 34px 0 34px;
+    font-size: 22px;
+}
+.footer_icons > i:hover {
+    color: #333333;
+}
+ /*End Styling Footer*/
+
+
+
+
+
+
+/*start styling about us page*/
+
+.aboutuspagetitle {
+    padding: 130px 20px 20px 20px;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+.aboutuscontainer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 4%;
+    margin-bottom: 6%;
+}
+.aboutusgrid {
+    flex-direction: column;
+    margin: 10px;
+}
+.aboutusgriditem {
+    display: inline-block;
+    margin: 10px;
+}
+.aboutusgriditem > img {
+    border-radius: 0.2%;
+    height: 380px;
+    width: 600px;
+}
+.aboutusgriditem > .aboutustext {
+    color: #ffffff;
+    height: 380px;
+    width: 600px;
+    background-color: #111111;
+}
+.aboutusgriditem > .aboutustext > h4 {
+    padding: 14% 0 0 0;
+    color: #7587ec;
+}
+.aboutusgriditem > .aboutustext > p {
+    padding: 10px 60px 60px 60px;
+}
+
+/*End styling about us page*/
+
+
+
+
+
+
+
+/* start styling for photos page*/
+
+.row {
+    padding: 20px;
+    text-align: center;
+    display: inline;
+    justify-content: center;
+  }
+.photospagetitle {
+    padding: 100px 20px 20px 20px;
+}
+#imgContent {
+    padding-bottom: 5%;
+    display: block;
+}
+.galleryItem{
+    overflow: hidden;
+}
+.galleryContainer{
+    max-width: 1200px;
+    margin: auto;
+}
+.galleryImg{
+    max-width: 100%;
+    transition: .5s;
+}
+.galleryImg:hover{
+    transform: scale(1.1);
+}
+.galleryItem img{
+    display: block;
+}
+
+/*end of photo page styling*/
+
+
+
+
+
+
+/* Start contact page styling*/
+
+.contactpagetitle {
+    padding: 130px 20px 60px 20px;
+    text-align: center;
+    color: #ffffff;
+}
+#contactpage {
+    color: #fff;
+}
+.contacttablewrapper {
+    display: inline-flex;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    background-color: #111111   ;
+    margin-top: 30px;
+}
+table {
+    color: #fff;
+    padding: 40px 10px 60px 10px;
+}
+table > thead > tr > th,
+table > tbody > tr > td {
+    text-align: left;
+    padding: 2px 26px 2px 26px;
+}
+thead > tr > th:first-child {
+    padding-top: 20px;
+    color: #7587ec;
+}
+tbody > tr > td:first-child {
+    color: #7587ec;
+}
+.contactformwrapper {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+form {
+    padding: 40px 16px 40px 16px;
+}
+form > div > label {
+    float: left;
+    padding: 24px 20px 15px 10px;
+}
+form > div > input,
+form > div > textarea {
+    font-family: 'Ubuntu', sans-serif;
+    width: 200px;
+    color: #ffffff;
+    background-color: #111111;
+    float: right;
+    padding: 20px;
+    margin: 10px;
+    height: 10px;
+}
+form > div > textarea {
+    font-size: 86%;
+    max-width: 200px;
+    min-width: 200px;
+    min-height: 140px;
+    margin-bottom: 140px;
+}
+
+/*end of contact page styling*/
+
+/* start partners page styling*/
+
+.partnerContent{
+  padding-top: 53px;
+  overflow-x: hidden;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  scroll-snap-points-y: repeat(100%);
+  scroll-snap-type: mandatory;
+  scroll-snap-destination: 100% 0%;
+}
+
+.partnerItem{
+  scroll-snap-align: start;
+  height: 100vh;
+  color: white;
+  background-position: center;
+}
+
+.partnerItem > p{
+  font-size: 3em;
+  background-color: rgba(0,0,0,75%);
+  text-align: center;
+  width: 50%;
+  padding: 10px 10px;
+  margin: auto;
+}
+
+.partnerItem:nth-child(1){
+  background-image: url(../img/googleHQ.png);
+}
+
+.partnerItem:nth-child(2){
+  background-image: url(../img/kojimaHQ.png);
+}
+
+.partnerItem:nth-child(3){
+  background-image: url(../img/samsungHQ.png);
+}
+
+/*end of partners page styling*/
+
+
+
+
+
+
+@media screen and (min-width: 600px){
+  .gallery{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 801px){
+  #dropToggle:checked + .dropdownContent{
+   display: block;
+ }
+}
+
+@media screen and (min-width: 920px){
+  .galleryItem{
+    width: calc(100% / 3);
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .content {
+        display: block;
+        text-align: center;
+  }
+  .galleryItem{
+    width: calc(100% / 2);
+  }
+}
+/* styling voor mobile */
+
+@media only screen and (max-width: 800px) {
+    .homepagetitle {
+        font-size: 2.2em;
+    }
+    .photospagetitle{
+        font-size: 2.2em;
+        padding-top: 20px;
+    }
+    .aboutuspagetitle {
+        font-size: 2.2em;
+    }
+
+    #imgContent{
+      padding-top: 20%;
+      padding-bottom: 0;
+    }
+
+    .aboutusgriditem {
+        margin-bottom: 40px;
+    }
+
+    .contacttablewrapper {
+        margin-top: 0;
+    }
+    table {
+        padding: 120px 0 60px 0;
+    }
+    table > thead {
+        display: none;
+    }
+    table > tbody > tr > td {
+        display: block;
+        vertical-align: middle;
+        text-align: right;
+        padding: 2px 6px 2px 6px;
+    }
+    table > tbody > tr > td:last-child {
+        padding-bottom: 80px;
+        font-size: auto;
+    }
+    table > tbody > tr > td:first-child {
+        padding-bottom: 20px;
+        font-size: auto;
+    }
+    table > tbody > tr > td[data-title]:before {
+        content: attr(data-title);
+        float: left;
+        padding-right: 100px;
+    }
+
+    header {
+        height: 60px;
+    }
+    .hamburger {
+        float: left;
+        padding: 1px 0 0 0;
+        padding-left: 2%;
+        padding-right: 500px;
+        display: block;
+        cursor: pointer;
+        font-size: 2.5em;
+    }
+    header > .menu {
+        float: none;
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        font-size: 1.25em;
+        padding: 0;
+    }
+    header > .menu a {
+        display: block;
+    }
+    header > .menu > li{
+      height: 15%;
+      list-style: none;
+    }
+    header > .menu > li > a{
+      width: 100%;
+      height: 100%;
+      padding: 0;
+    }
+
+    #toggle:checked + .menu{
+        display: inline-block;
+    }
+
+    #footer {
+        height: 60px;
+    }
+    .footer_icons > i{
+        font-size: 26px;
+    }
+
+    .dropdownContent{
+      display: contents;
+    }
+
+    .dropdownContent > ul > li{
+      height: 15%;
+    }
+
+    .dropdownContent > ul > li > a{
+      height: 100%;
+      padding: 0;
+    }
+
+    #dropli{
+      height: auto;
+    }
+
+    .dropdown{
+      display: none;
+    }
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .aboutusgriditem > img {
+        height: auto;
+        width: 100%;
+    }
+    .aboutusgriditem > .aboutustext {
+        color: #ffffff;
+        height: auto;
+        width: 100%;
+    }
+
+   #imgContent{
+      padding-top: 12%;
+    }
+
+    .homepagetitle {
+        font-size: 2.3em;
+    }
+    .photospagetitle{
+      font-size: 2.3em;
+    }
+    .homepagetitle {
+        font-size: 2.3em;
+    }
+
+    .galleryItem{
+      width: 100%;
+    }
+
+    header {
+        height: 88px;
+    }
+    .hamburger {
+        float: left;
+        padding: 16px 0 0 0;
+        padding-left: 20px;
+        padding-right: 300px;
+    }
+
+    #footer {
+        height: 90px;
+    }
+    .footer_icons > i{
+        font-size: 30px;
+        padding: 28px 10px 18px 10px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+
+    table > tbody > tr > td[data-title]:before {
+        padding-right: 10px;
+    }
+    .contactformwrapper {
+        display: flex;
+    }
+    form > div > label {
+        text-align: center;
+        display: block;
+        float: none;
+
+    }
+    form > div > input,
+    form > div > textarea {
+        float: none;
+    }
+}
