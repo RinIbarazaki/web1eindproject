@@ -155,7 +155,7 @@ header > .menu > li >  a {
 .aboutuspagetitle {
     padding: 130px 20px 20px 20px;
     text-align: center;
-    color: #ffffff; 
+    color: #ffffff;
     margin-bottom: 20px;
 }
 .aboutuscontainer {
@@ -187,11 +187,11 @@ header > .menu > li >  a {
     border-bottom-left-radius: 0.5%;
     border-bottom-right-radius: 0.5%;
 }
-.aboutusgriditem > .aboutustext > h4 { 
+.aboutusgriditem > .aboutustext > h4 {
     padding: 14% 0 0 0;
     color: #7587ec;
 }
-.aboutusgriditem > .aboutustext > p {  
+.aboutusgriditem > .aboutustext > p {
     padding: 10px 60px 60px 60px;
 }
 
@@ -248,13 +248,13 @@ header > .menu > li >  a {
 .contactpagetitle {
     padding: 130px 20px 60px 20px;
     text-align: center;
-    color: #ffffff; 
+    color: #ffffff;
 }
 #contactpage {
     color: #fff;
 }
 
-.contactformwrapper {  
+.contactformwrapper {
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -304,7 +304,7 @@ form > div > button > p{
 }
 .contacttablewrapper {
     display: inline-flex;
-    justify-content: center;    
+    justify-content: center;
     height: auto;
     width: 100%;
     background-color: #111111   ;
@@ -331,49 +331,49 @@ tbody > tr > td:first-child {
 
 /*end of contact page styling*/
 
-/* start partners page styling*/
+/* start videos page styling*/
 
-.partnerContent{
+.videoContent{
   padding-top: 53px;
-  overflow-x: hidden;
   position: absolute;
   width: 100vw;
   height: 100vh;
-  overflow: auto;
+  overflow-y: scroll;
+
+  scroll-snap-type: y mandatory;
+
+  /* firefox support */
   scroll-snap-points-y: repeat(100%);
   scroll-snap-type: mandatory;
-  scroll-snap-destination: 100% 0%;
+  scroll-snap-destination: 100% -53px;
+
+  /* edge and IE support */
+  -ms-scroll-snap-points-y: repeat(100%);
+  -ms-scroll-snap-type: mandatory;
+  -ms-scroll-snap-destination: 100% -53px;
 }
 
-.partnerItem{
+.videoItem{
   scroll-snap-align: start;
   height: 100vh;
   color: white;
-  background-position: center;
 }
 
-.partnerItem > p{
+.videoItem > video{
+  height: 100%;
+  width: 100%;
+}
+
+/* .videoItem > p{
   font-size: 3em;
   background-color: rgba(0,0,0,75%);
   text-align: center;
   width: 50%;
   padding: 10px 10px;
   margin: auto;
-}
+} */
 
-.partnerItem:nth-child(1){
-  background-image: url(../img/googleHQ.png);
-}
-
-.partnerItem:nth-child(2){
-  background-image: url(../img/kojimaHQ.png);
-}
-
-.partnerItem:nth-child(3){
-  background-image: url(../img/samsungHQ.png);
-}
-
-/*end of partners page styling*/
+/*end of videos page styling*/
 
 
 

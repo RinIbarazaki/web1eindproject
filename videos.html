@@ -1,0 +1,53 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width">
+</head>
+<!---End style-->
+<body class="main">
+    <header>
+      <label class="hamburger" for="toggle">&#9776;</label>
+      <input type="checkbox" id="toggle"/>
+        <ul class="menu" id="menuid">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutUs.html">About Us</a></li>
+            <li id="dropli">
+                <label class="dropdown" for="dropToggle">Projects<i class="fa fa-caret-down"></i></label>
+                <input type="checkbox" id="dropToggle"/>
+                <div class="dropdownContent">
+                  <ul>
+                    <li><a href="./photos.html">Photos</a></li>
+                    <li><a href="./videos.html">Videos</a></li>
+                  </ul>
+                </div>
+            </li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </header>
+    <!---End header-->
+    <div class="videoContent">
+      <div class="videoItem">
+        <video src="./vid/wetHawk.mp4" controls>
+
+        </video>
+      </div>
+
+      <div class="videoItem">
+        <video src="./vid/people.mp4" controls>
+
+        </video>
+      </div>
+
+      <div class="videoItem">
+        <video src="./vid/beach.mp4" controls>
+
+        </video>
+      </div>
+    </div>
+<!---End container-->
+</body>
+</html>
