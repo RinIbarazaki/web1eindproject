@@ -570,13 +570,9 @@ tbody > tr > td:first-child {
     .galleryItem{
       width: 100%;
     }
-
-    header {
-        height: 88px;
-    }
+    
     .hamburger {
         float: left;
-        padding: 16px 0 0 0;
         padding-left: 20px;
         padding-right: 300px;
     }
