@@ -297,7 +297,7 @@ header > .menu > li >  a {
 .partnerItem>img:focus + .moreinfoText{
   display: block;
   overflow: hidden;
-  animation: moreInfo2 3s forwards;
+  animation: moreInfo2 2s forwards;
   animation-delay: 2s;
 }
 
@@ -310,7 +310,7 @@ header > .menu > li >  a {
 
 @keyframes moreInfo{
   0%{opacity: 1;}
-  60%{opacity: 0; width: 100%}
+  30%{opacity: 0; width: 100%}
   100%{opacity: 0; width: 0%;}
 }
 
@@ -662,7 +662,7 @@ tbody > tr > td:first-child {
 
     .footer_icons > i{
         font-size: 30px;
-        padding: 18px 10px 13px 10px;
+        padding: 16px 10px 16px 10px;
     }
 
     .partnerItem{
