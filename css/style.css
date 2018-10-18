@@ -241,10 +241,16 @@ header > .menu > li >  a {
 
 /* start of partners page styling*/
 
+.partnersTitle{
+  padding: 130px 20px 60px 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
 .partnerContainer{
   max-width: 1600px;
   margin: auto;
-  padding-top: 53px;
+  padding-bottom: 53px;
 }
 
 .partnerContent{
@@ -256,6 +262,7 @@ header > .menu > li >  a {
 
 .cName{
   padding: 10px 0px;
+  border-bottom: solid white 2px;
 }
 
 .pName{
@@ -280,6 +287,7 @@ header > .menu > li >  a {
 .partnerItem>img{
   width: 100%;
   position: relative;
+  cursor: pointer;
 }
 
 .partnerItem>img:focus{
