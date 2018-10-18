@@ -88,6 +88,12 @@ header > .menu > li >  a {
     background-repeat: no-repeat;
     background-size: cover;
     image-resolution: 300dpi;
+    animation-name: homebannereffect;
+    animation-duration: 2.4s;
+}
+@keyframes homebannereffect {
+    0% {opacity: 0;}
+    100% {opactity: 1;}
 }
  .homepagetitle {
     padding: 130px 20px 20px 20px;
@@ -164,6 +170,12 @@ header > .menu > li >  a {
     text-align: center;
     margin-top: 4%;
     margin-bottom: 6%;
+    animation-name: aboutusfade;
+    animation-duration: 0.6s;
+}
+@keyframes aboutusfade {
+    0% {opacity:0;}
+    100% {opactity: 1;}
 }
 .aboutusgrid {
     flex-direction: column;
@@ -340,6 +352,13 @@ header > .menu > li >  a {
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
+    animation-name: formslide;
+    animation-duration: 1s;
+    position: relative;
+}
+@keyframes formslide {
+    0% {opacity:0; left: -300; top: 0;}
+    100% {opactity: 1; left: 0; top: 0;}
 }
 .form {
     margin-bottom: 120px;
