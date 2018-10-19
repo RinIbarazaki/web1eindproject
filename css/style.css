@@ -8,6 +8,9 @@
     font-family: 'Ubuntu', sans-serif;
     background-color: black;
 }
+
+
+
  /*Start Styling Header*/
  header {
     width: 100%;
@@ -79,6 +82,39 @@ header > .menu > li >  a {
  /*End Styling Header*/
 
 
+
+
+ 
+ /*Start Styling Footer*/
+ #footer {
+    width: 100%;
+    height: 55px;
+    color: #fff;
+    text-align: center;
+    background-color: #111111;
+}
+.footer_icons > i {
+    padding: 16px 34px 0 34px;
+    font-size: 22px;
+    animation-name: colorfade;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+.footer_icons > i:hover {
+    color: #333333;
+}
+@keyframes colorfade {
+    0% {color: white}
+    25% {color: #202020}
+    50% {color: white}
+}
+ /*End Styling Footer*/
+
+
+
+
+ 
+
  /*Start Styling Homepage*/
  .top_image {
     background-image: url(../img/vogelbloem.jpg);
@@ -133,32 +169,6 @@ header > .menu > li >  a {
  /*End Styling Homepage*/
 
 
- /*Start Styling Footer*/
- #footer {
-    width: 100%;
-    height: 55px;
-    color: #fff;
-    text-align: center;
-    background-color: #111111;
-}
-.footer_icons > i {
-    padding: 16px 34px 0 34px;
-    font-size: 22px;
-    animation-name: colorfade;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-}
-.footer_icons > i:hover {
-    color: #333333;
-}
-@keyframes colorfade {
-    0% {color: white}
-    25% {color: #202020}
-    50% {color: white}
-}
- /*End Styling Footer*/
-
-
 
 
 
@@ -189,16 +199,16 @@ header > .menu > li >  a {
 }
 .aboutusgriditem > img {
     position: relative;
-    height: 380px;
-    width: 600px;
+    height: 330px;
+    width: 520px;
     border-top-left-radius: 0.5%;
     border-top-right-radius: 0.5%;
 }
 .aboutusgriditem > .aboutustext > div {
     position: relative;
     color: #ffffff;
-    height: 380px;
-    width: 600px;
+    height: 330px;
+    width: 520px;
     background-color: #202020;
     border-bottom-left-radius: 0.5%;
     border-bottom-right-radius: 0.5%;
@@ -251,12 +261,12 @@ header > .menu > li >  a {
     justify-content: center;
   }
 .photospagetitle {
-  padding: 110px 20px 50px 20px;
+  padding: 130px 20px 60px 20px;
   text-align: center;
   color: #ffffff;
 }
 #imgContent {
-    padding-bottom: 5%;
+    padding-bottom: 7%;
     display: block;
 }
 .galleryItem{
@@ -278,6 +288,49 @@ header > .menu > li >  a {
 }
 
 /*end of photo page styling*/
+
+
+
+
+
+
+/* start videos page styling*/
+
+.videoContent{
+    padding-top: 53px;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+  
+    scroll-snap-type: y mandatory;
+  
+    /* firefox support */
+    scroll-snap-points-y: repeat(100%);
+    scroll-snap-type: mandatory;
+    scroll-snap-destination: 100% -53px;
+  
+    /* edge and IE support */
+    -ms-scroll-snap-points-y: repeat(100%);
+    -ms-scroll-snap-type: mandatory;
+    -ms-scroll-snap-destination: 100% -53px;
+  }
+  
+  .videoItem{
+    scroll-snap-align: start;
+    height: 100vh;
+    color: white;
+  }
+  
+  .videoItem > video{
+    height: 100%;
+    width: 100%;
+  }
+  
+  /*end of videos page styling*/
+
+
+
 
 
 
@@ -304,7 +357,7 @@ header > .menu > li >  a {
 
 .cName{
   padding: 20px 0px 20px;
-  border-BOTTOM: solid #7587ec 1px;
+  border-bottom: solid #7587ec 2px;
 }
 
 .partnerItem{
@@ -318,7 +371,7 @@ header > .menu > li >  a {
 
 .pName{
   padding-top: 20px;
-  border-top: solid #7587ec 1px;
+  border-top: solid #7587ec 2px;
 }
 
 .partnerItem > p,
@@ -339,10 +392,6 @@ header > .menu > li >  a {
   width: 100%;
   position: relative;
   cursor: pointer;
-}
-
-.partnerItem>img:hover {
-    background-image: #111111;
 }
 
 .partnerItem>img:focus{
@@ -375,9 +424,12 @@ header > .menu > li >  a {
   100%{ height: auto; max-height: 100%;}
 }
 
-
-
 /* end of partners page styling*/
+
+
+
+
+
 
 
 /* Start contact page styling*/
@@ -451,7 +503,7 @@ form > div > button > p{
     justify-content: center;
     height: auto;
     width: 100%;
-    background-color: #111111   ;
+    background-color: #111111;
     margin-top: 30px;
 }
 table {
@@ -474,41 +526,6 @@ tbody > tr > td:first-child {
 }
 
 /*end of contact page styling*/
-
-/* start videos page styling*/
-
-.videoContent{
-  padding-top: 53px;
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  overflow-y: scroll;
-
-  scroll-snap-type: y mandatory;
-
-  /* firefox support */
-  scroll-snap-points-y: repeat(100%);
-  scroll-snap-type: mandatory;
-  scroll-snap-destination: 100% -53px;
-
-  /* edge and IE support */
-  -ms-scroll-snap-points-y: repeat(100%);
-  -ms-scroll-snap-type: mandatory;
-  -ms-scroll-snap-destination: 100% -53px;
-}
-
-.videoItem{
-  scroll-snap-align: start;
-  height: 100vh;
-  color: white;
-}
-
-.videoItem > video{
-  height: 100%;
-  width: 100%;
-}
-
-/*end of videos page styling*/
 
 
 
