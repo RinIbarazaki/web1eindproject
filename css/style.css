@@ -144,9 +144,17 @@ header > .menu > li >  a {
 .footer_icons > i {
     padding: 16px 34px 0 34px;
     font-size: 22px;
+    animation-name: colorfade;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 .footer_icons > i:hover {
     color: #333333;
+}
+@keyframes colorfade {
+    0% {color: white}
+    25% {color: #202020}
+    50% {color: white}
 }
  /*End Styling Footer*/
 
@@ -170,42 +178,61 @@ header > .menu > li >  a {
     text-align: center;
     margin-top: 4%;
     margin-bottom: 6%;
-    animation-name: aboutusfade;
-    animation-duration: 0.6s;
-}
-@keyframes aboutusfade {
-    0% {opacity:0;}
-    100% {opactity: 1;}
 }
 .aboutusgrid {
     flex-direction: column;
-    margin: 10px;
+    margin: 8px;
 }
 .aboutusgriditem {
     display: inline-block;
-    margin: 10px;
+    margin: 8px;
 }
 .aboutusgriditem > img {
+    position: relative;
     height: 380px;
     width: 600px;
     border-top-left-radius: 0.5%;
     border-top-right-radius: 0.5%;
 }
-.aboutusgriditem > .aboutustext {
+.aboutusgriditem > .aboutustext > div {
+    position: relative;
     color: #ffffff;
     height: 380px;
     width: 600px;
-    background-color: #111111;
+    background-color: #202020;
     border-bottom-left-radius: 0.5%;
     border-bottom-right-radius: 0.5%;
 }
-.aboutusgriditem > .aboutustext > h4 {
+.aboutusgriditem > .aboutustext > div > h3 {
     padding: 14% 0 0 0;
     color: #7587ec;
 }
-.aboutusgriditem > .aboutustext > p {
+.aboutusgriditem > .aboutustext > div > p {
     padding: 10px 60px 60px 60px;
 }
+
+.aboutusgriditem > .imgsean,
+.aboutusgriditem > div > .textsean,
+.aboutusgriditem > .imgbilly,
+.aboutusgriditem > div > .textbilly {
+    animation-name: aboutusslide1;
+    animation-duration: 1s;
+    }
+    @keyframes aboutusslide1 {
+        0% {opacity:0; left: -300; top: 0;}
+        100% {opactity: 1; left: 0; top: 0;}
+    }
+.aboutusgriditem > .imglea,
+.aboutusgriditem > div > .textlea,
+.aboutusgriditem > .imgpatrick,
+.aboutusgriditem > div > .textpatrick {
+    animation-name: aboutusslide2;
+    animation-duration: 1s;
+    }
+    @keyframes aboutusslide2 {
+        0% {opacity:0; left: 300; top: 0;}
+        100% {opactity: 1; left: 0; top: 0;}
+    }
 
 /*End styling about us page*/
 
@@ -251,6 +278,7 @@ header > .menu > li >  a {
 /*end of photo page styling*/
 
 
+
 /* start of partners page styling*/
 
 .partnersTitle{
@@ -262,7 +290,7 @@ header > .menu > li >  a {
 .partnerContainer{
   max-width: 1600px;
   margin: auto;
-  padding-bottom: 53px;
+  padding-bottom: 160px;
 }
 
 .partnerContent{
@@ -273,27 +301,36 @@ header > .menu > li >  a {
 }
 
 .cName{
-  padding: 10px 0px;
-  border-bottom: solid white 2px;
-}
-
-.pName{
-  padding-top: 10px;
-  border-top: solid white 2px;
+  padding: 20px 0px 20px;
+  border-BOTTOM: solid #7587ec 1px;
 }
 
 .partnerItem{
-  background-color: #0066B2;
-  max-width: 25%;
-  margin-top: 2.5%;
-  margin-right: 2.5%;
-  margin-left: 2.5%;
+    background-color: #202020;
+    max-width: 25%;
+    margin-top: 2.5%;
+    margin-right: 1.5%;
+    margin-left: 1.5%;
+    border-radius: 0.5%;
+  }
+
+.pName{
+  padding-top: 20px;
+  border-top: solid #7587ec 1px;
 }
 
-.partnerItem > p{
-  font-size: 2rem;
+.partnerItem > p,
+.partnerItem > h3 {
   text-align: center;
   word-wrap: break-word;
+}
+
+.partnerItem > p {
+    font-size: 122%;
+}
+.partnerItem > p:last-child {
+    padding-bottom: 30px;
+    font-size: 90%;
 }
 
 .partnerItem>img{
@@ -302,22 +339,27 @@ header > .menu > li >  a {
   cursor: pointer;
 }
 
+.partnerItem>img:hover {
+    background-image: #111111;
+}
+
 .partnerItem>img:focus{
-  animation: moreInfo 2s forwards;
+  animation: moreInfo 1s forwards;
 }
 
 .partnerItem>img:focus + .moreinfoText{
+  font-size: 100%;
   display: block;
   overflow: hidden;
-  animation: moreInfo2 2s forwards;
-  animation-delay: 2s;
+  animation: moreInfo2 1s forwards;
+  animation-delay: 1s;
 }
 
 .moreInfoText{
   display:none;
   max-height: 0;
-  font-size: 1.2rem;
-  padding: 0 10px 0 10px;
+  margin: 80px 0 80px 0;
+  padding: 0 14px 0 14px;
 }
 
 @keyframes moreInfo{
@@ -649,7 +691,7 @@ tbody > tr > td:first-child {
         height: auto;
         width: 100%;
     }
-    .aboutusgriditem > .aboutustext {
+    .aboutusgriditem > .aboutustext > div {
         color: #ffffff;
         height: auto;
         width: 100%;
