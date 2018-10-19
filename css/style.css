@@ -251,7 +251,9 @@ header > .menu > li >  a {
     justify-content: center;
   }
 .photospagetitle {
-    padding: 100px 20px 20px 20px;
+  padding: 110px 20px 50px 20px;
+  text-align: center;
+  color: #ffffff;
 }
 #imgContent {
     padding-bottom: 5%;
@@ -545,18 +547,17 @@ tbody > tr > td:first-child {
 
 @media only screen and (max-width: 800px) {
     .homepagetitle {
-        font-size: 2.2em;
-    }
-    .photospagetitle{
-        font-size: 2.2em;
-        padding-top: 20px;
+      font-size: 2.2em;
     }
     .aboutuspagetitle {
-        font-size: 2.2em;
+      font-size: 2.2em;
+    }
+    .photospagetitle{
+      font-size: 2.2em;
+
     }
 
     #imgContent{
-      padding-top: 20%;
       padding-bottom: 0;
     }
 
@@ -695,10 +696,6 @@ tbody > tr > td:first-child {
         color: #ffffff;
         height: auto;
         width: 100%;
-    }
-
-   #imgContent{
-      padding-top: 12%;
     }
 
     .homepagetitle {
