@@ -259,7 +259,7 @@ header > .menu > li >  a {
         100% {opactity: 1; left: 0; top: 0;}
     }
 .aboutusgriditem > .imgright,
-.aboutusgriditem > div > .texttight {
+.aboutusgriditem > div > .textright {
     animation-name: aboutusslide2;
     animation-duration: 1s;
     }
