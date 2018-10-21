@@ -84,7 +84,7 @@ header > .menu > li >  a {
 
 
 
- 
+
  /*Start Styling Footer*/
  #footer {
     width: 100%;
@@ -113,7 +113,7 @@ header > .menu > li >  a {
 
 
 
- 
+
 
  /*Start Styling Homepage*/
  .top_image {
@@ -166,6 +166,34 @@ header > .menu > li >  a {
     background-size: cover;
     image-resolution: 300dpi;
 }
+
+/*jobs section*/
+
+.jobs{
+  color: #ffffff;
+  padding: 5% 0 5% 0;
+  font-size: 1.5rem;
+}
+
+.jobTitle{
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.jobList{
+  max-width: 42%;
+  margin: auto;
+}
+
+.jobDesc{
+  font-size: 1rem;
+}
+
+.jobList > li > p{
+  border-left: solid white 1px;
+  padding: 8px;
+}
+
  /*End Styling Homepage*/
 
 
@@ -221,8 +249,10 @@ header > .menu > li >  a {
     padding: 10px 60px 60px 60px;
 }
 
-.aboutusgriditem > .imgleft,
-.aboutusgriditem > div > .textleft {
+.aboutusgriditem > .imgsean,
+.aboutusgriditem > div > .textsean,
+.aboutusgriditem > .imgbilly,
+.aboutusgriditem > div > .textbilly {
     animation-name: aboutusslide1;
     animation-duration: 1s;
     }
@@ -230,8 +260,10 @@ header > .menu > li >  a {
         0% {opacity:0; left: -300; top: 0;}
         100% {opactity: 1; left: 0; top: 0;}
     }
-.aboutusgriditem > .imgright,
-.aboutusgriditem > div > .textright {
+.aboutusgriditem > .imglea,
+.aboutusgriditem > div > .textlea,
+.aboutusgriditem > .imgpatrick,
+.aboutusgriditem > div > .textpatrick {
     animation-name: aboutusslide2;
     animation-duration: 1s;
     }
@@ -241,6 +273,7 @@ header > .menu > li >  a {
     }
 
 /*End styling about us page*/
+
 
 
 
@@ -303,31 +336,31 @@ header > .menu > li >  a {
     width: 100vw;
     height: 100vh;
     overflow-y: scroll;
-  
+
     scroll-snap-type: y mandatory;
-  
+
     /* firefox support */
     scroll-snap-points-y: repeat(100%);
     scroll-snap-type: mandatory;
     scroll-snap-destination: 100% -53px;
-  
+
     /* edge and IE support */
     -ms-scroll-snap-points-y: repeat(100%);
     -ms-scroll-snap-type: mandatory;
     -ms-scroll-snap-destination: 100% -53px;
   }
-  
+
   .videoItem{
     scroll-snap-align: start;
     height: 100vh;
     color: white;
   }
-  
+
   .videoItem > video{
     height: 100%;
     width: 100%;
   }
-  
+
   /*end of videos page styling*/
 
 
