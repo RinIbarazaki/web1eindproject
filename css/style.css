@@ -249,10 +249,8 @@ header > .menu > li >  a {
     padding: 10px 60px 60px 60px;
 }
 
-.aboutusgriditem > .imgsean,
-.aboutusgriditem > div > .textsean,
-.aboutusgriditem > .imgbilly,
-.aboutusgriditem > div > .textbilly {
+.aboutusgriditem > .imgleft,
+.aboutusgriditem > div > .textleft{
     animation-name: aboutusslide1;
     animation-duration: 1s;
     }
@@ -260,10 +258,8 @@ header > .menu > li >  a {
         0% {opacity:0; left: -300; top: 0;}
         100% {opactity: 1; left: 0; top: 0;}
     }
-.aboutusgriditem > .imglea,
-.aboutusgriditem > div > .textlea,
-.aboutusgriditem > .imgpatrick,
-.aboutusgriditem > div > .textpatrick {
+.aboutusgriditem > .imgright,
+.aboutusgriditem > div > .texttight {
     animation-name: aboutusslide2;
     animation-duration: 1s;
     }
