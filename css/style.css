@@ -614,6 +614,10 @@ tbody > tr > td:first-child {
 
     }
 
+    .jobList{
+      max-width: 70%
+    }
+
     #imgContent{
       padding-bottom: 0;
     }
