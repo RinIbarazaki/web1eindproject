@@ -171,8 +171,11 @@ header > .menu > li >  a {
 
 .jobs{
   color: #ffffff;
-  padding: 5% 0 5% 0;
-  font-size: 1.5rem;
+  padding: 80px 0 140px 0;
+}
+
+.jobs > h2 {
+    font-size: 1.8rem;
 }
 
 .jobTitle{
@@ -181,16 +184,13 @@ header > .menu > li >  a {
 }
 
 .jobList{
-  max-width: 42%;
+  border-left: solid #7587ec 2px;
+  max-width: 45%;
   margin: auto;
-}
-
-.jobDesc{
-  font-size: 1rem;
+  padding: 0 40px 0 40px;
 }
 
 .jobList > li > p{
-  border-left: solid white 1px;
   padding: 8px;
 }
 
