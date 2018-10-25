@@ -185,7 +185,7 @@ header > .menu > li >  a {
 
 .jobList{
   border-left: solid #7587ec 2px;
-  max-width: 45%;
+  max-width: 600px;
   margin: auto;
   padding: 0 40px 0 40px;
 }
@@ -349,7 +349,6 @@ header > .menu > li >  a {
   .videoItem{
     scroll-snap-align: start;
     height: 100vh;
-    color: white;
   }
 
   .videoItem > video{
@@ -445,7 +444,6 @@ header > .menu > li >  a {
 .moreInfoText{
   display:none;
   max-height: 0;
-  margin: 80px 0 80px 0;
   padding: 0 14px 0 14px;
 }
 
@@ -457,7 +455,8 @@ header > .menu > li >  a {
 
 @keyframes moreInfo2 {
   0%{max-height: 0;}
-  100%{ height: auto; max-height: 100%;}
+  100%{ height: auto; max-height: 100%; margin: 80px 0 80px 0;}
+
 }
 
 /* end of partners page styling*/
@@ -607,7 +606,6 @@ tbody > tr > td:first-child {
     }
     .photospagetitle{
       font-size: 2.2em;
-
     }
 
     .jobList{
@@ -647,15 +645,12 @@ tbody > tr > td:first-child {
     table > tbody > tr > td {
         display: block;
         text-align: right;
-        padding: 2px 6px 2px 6px;
     }
     table > tbody > tr > td:last-child {
         padding-bottom: 80px;
-        font-size: auto;
     }
     table > tbody > tr > td:first-child {
         padding-bottom: 20px;
-        font-size: auto;
     }
     table > tbody > tr > td[data-title]:before {
         content: attr(data-title);
@@ -753,10 +748,6 @@ tbody > tr > td:first-child {
         color: #ffffff;
         height: auto;
         width: 100%;
-    }
-
-    .jobList{
-      max-width: 100%;
     }
 
     .homepagetitle {
